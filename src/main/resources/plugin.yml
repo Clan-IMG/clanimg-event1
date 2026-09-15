@@ -1,0 +1,11 @@
+name: clanimg-event1
+description: $description
+prefix: [ Event ]
+version: '${version}'
+
+main: net.clanimg.clanimgEvent1.ClanimgEvent1
+api-version: '1.21.11'
+load: POSTWORLD
+
+authors: [ WrobelXXL ]
+website: https://clan-img.net
