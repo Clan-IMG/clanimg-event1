@@ -1,0 +1,21 @@
+name: clanimg-event1
+description: Clan IMG Event Plugin
+prefix: [ Event ]
+version: '1.0-SNAPSHOT'
+
+main: net.clanimg.clanimgEvent1.ClanimgEvent1
+api-version: '1.21.11'
+load: POSTWORLD
+
+authors: [ WrobelXXL ]
+website: https://clan-img.net
+
+commands:
+  event:
+    description: Startet ein Event.
+    usage: /event start <round>
+
+permissions:
+  clanimg.event.start:
+    description: Erlaubt das Starten von Event-Runden.
+    default: op

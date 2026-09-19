@@ -9,3 +9,13 @@ load: POSTWORLD
 
 authors: [ WrobelXXL ]
 website: https://clan-img.net
+
+commands:
+  event:
+    description: Startet ein Event.
+    usage: /event start <round>
+
+permissions:
+  clanimg.event.start:
+    description: Erlaubt das Starten von Event-Runden.
+    default: op

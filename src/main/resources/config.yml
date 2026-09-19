@@ -1,0 +1,30 @@
+lobby:
+  spawn:
+    world: world
+    position:
+      x: 0
+      y: 2
+      z: -5
+spawn2:
+  spawn:
+    world: spawn2
+    position:
+      x: 0
+      y: 2
+      z: 4
+round-1:
+  spawn:
+    world: round-1
+    soloworld: true # das heißt das nicht alle in die welt round-1 können, sondern von round-1 template gemacht werden also welten werden erstellt round-1-1 und round-1-2 usw. und die spieler werden in diese welten gespawnt
+    position:
+      x: 30
+      y: 73
+      z: 39
+  start:
+    command: "/event start round-1" # wenn der bvefehl ausgewüght wird, wird sauber die welten im hintergrudn erstellt und dann zeitgleich wenn gen+gende welten für jeden da sind einreleportiert. man kann den befehl alle 5 minutern ausführen.
+    permission: "clanimg.event.start"
+    cooldown: 5m
+  target:
+    event:
+      plate: "LIGHT_WEIGHTED_PRESSURE_PLATE"
+      tp: "spawn2"
